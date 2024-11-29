@@ -1,0 +1,629 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    position: relative;
+    z-index: 1;
+    
+}
+
+/* Background Video */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Header */
+
+
+ /* Body styling */
+ body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Background video */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+/* Background image */
+#background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://i.ibb.co/VgTJ5CS/IMG-2353.png') no-repeat center center;
+    background-size: cover;
+    opacity: 0.2; /* Adjust transparency here */
+    z-index: -1;
+}
+
+/* Header Logo */
+.header-content {
+    text-align: center;
+    padding: 10px;
+    background: rgba(245, 6, 6, 0.5);
+    border-bottom: 2px solid white;
+}
+
+.logo {
+    width: 150px;
+    border-radius: 10px;
+}
+
+/* Section styling */
+section {
+    padding: 20px;
+}
+
+/* Contact Information Section */
+.contact-info {
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+
+.logo {
+    max-width: 80px;
+    display: inline-block;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+/* Contact Info */
+.contact-info {
+    background-color: rgba(6, 1, 11, 0.8);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contact-info h2 {
+    font-size: 2em;
+}
+.coz-info {
+    background-color: rgba(239, 33, 33, 0.8);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+@media screen and (max-width: 768px) {
+    .slideshow-principal-container {
+        flex-direction: column;
+    }
+
+    .slideshow-container {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .principal-info {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+/* Fade effect for the slideshow */
+.slide {
+    width: 100%;
+    display: none;
+    transition: opacity 1s ease-in-out;
+    opacity: 0;
+}
+
+.slide.fade {
+    opacity: 1;
+    display: block !important;
+}
+
+/* Optional: Make the slideshow container more visually appealing */
+.slideshow-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.slideshow {
+    position: relative;
+    max-width: 100%;
+    display: block;
+}
+
+
+
+
+/* General Button Styles */
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+/* Glowing Animation */
+button.glow {
+    background-color: #007bff;  /* Initial button color */
+    animation: glow 3s infinite; /* 3-second animation loop */
+}
+
+/* Keyframes for color-changing glow effect */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 10px #007bff, 0 0 20px #007bff, 0 0 30px #007bff;
+        background-color: #007bff;
+    }
+    25% {
+        box-shadow: 0 0 10px #28a745, 0 0 20px #28a745, 0 0 30px #28a745;
+        background-color: #28a745;
+    }
+    50% {
+        box-shadow: 0 0 10px #ffc107, 0 0 20px #ffc107, 0 0 30px #ffc107;
+        background-color: #ffc107;
+    }
+    75% {
+        box-shadow: 0 0 10px #dc3545, 0 0 20px #dc3545, 0 0 30px #dc3545;
+        background-color: #dc3545;
+    }
+    100% {
+        box-shadow: 0 0 10px #007bff, 0 0 20px #007bff, 0 0 30px #007bff;
+        background-color: #007bff;
+    }
+}
+
+/* Optional: Hover Effect to Intensify Glow */
+button.glow:hover {
+    box-shadow: 0 0 15px #ffffff, 0 0 30px #ffffff, 0 0 45px #ffffff;
+    background-color: #ffffff;
+    color: #007bff;
+}
+
+
+
+
+
+
+
+
+
+
+/* General Button Styles */
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    border: 3px solid transparent; /* Border to hold color animation */
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    overflow: hidden;
+    background-color: #007bff; /* Initial button color */
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Animated Border Effect */
+button.animated-border {
+    animation: borderColorChange 3s infinite; /* 3-second loop for border color change */
+}
+
+/* Keyframes for color-changing border */
+@keyframes borderColorChange {
+    0% {
+        border-color: #010a14;
+        background-color: #040c15;
+    }
+    25% {
+        border-color: #28a745;
+        background-color: #28a745;
+    }
+    50% {
+        border-color: #ffc107;
+        background-color: #ffc107;
+    }
+    75% {
+        border-color: #dc3545;
+        background-color: #dc3545;
+    }
+    100% {
+        border-color: #007bff;
+        background-color: #007bff;
+    }
+}
+
+/* Optional: Hover Effect to Intensify */
+button.animated-border:hover {
+    color: #ca1d1d;
+    background-color: white;
+}
+
+
+
+
+/*picha ya button*/
+/* Additional styles for the extra content section */
+#moreText {
+    margin-top: 10px;
+    font-size: 0.95em;
+    color: #333;
+}
+
+
+/* environment containner */
+.headpitchure  {
+    background-color: rgba(4, 137, 12, 0.8);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: rgba(15, 1, 1, 0.929);
+    text-align: center;
+    padding: 20px;
+    font-size: 1em;
+}
+
+
+
+
+
+.dancing-script-style {
+    font-family: "Dancing Script", cursive; /* Font ya Dancing Script */
+    font-weight: 700; /* Uzito wa fonti */
+    font-size: 45px; /* Ukubwa wa fonti */
+    color: rgb(12, 170, 15); /* Rangi ya maandishi */
+    text-shadow: 1px 1px 0 black, /* Kivuli cha mstari mweusi */
+                 -1px 1px 0 black,
+                 1px -1px 0 black,
+                 -1px -1px 0 black;
+    text-align: center; /* Maandishi katikati */
+    margin: 20px auto; /* Nafasi juu na chini, maandishi katikati */
+}
+
+
+
+
+
+
+/* Mtindo wa saa */
+.clock-container {
+    position: fixed;
+    top: 10px; /* Nafasi ya juu */
+    right: 10px; /* Nafasi ya kulia */
+ 
+    padding: 10px 20px;
+    border: 2px solid #333; /* Mstari wa kisanduku */
+    border-radius: 8px; /* Kona za duara */
+    font-family: Arial, sans-serif;
+    color: #333; /* Rangi ya maandishi */
+    font-size: 18px;
+    z-index: 1000; /* Hakikisha iko juu ya kila kitu */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); /* Kivuli */
+    text-align: center; /* Maandishi ya katikati */
+}
+
+.format-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    font-size: 16px; /* Ukubwa wa mshale */
+    cursor: pointer;
+    color: #333; /* Rangi ya mshale */
+    
+    border: 2px solid #1af40a; /* Mstari wa duara */
+    border-radius: 50%; /* Fanya duara */
+    margin: 10px auto 0; /* Kuweka katikati */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.format-icon:hover {
+    background-color: #ff0000; /* Rangi ya bluu unapobofya */
+    color: #fff; /* Rangi ya mshale unapobofya */
+    transform: scale(1.1); /* Punguza au ongeza kidogo mshale */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* General styling for headings */
+h3 {
+    font-family: 'Dancing Scrpt', cursive;
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 8px;
+    color: white; /* White text color for better contrast */
+}
+
+/* Specific styling for each heading */
+h3.mission {
+    background-color: green; /* Mission - Green background */
+}
+
+h3.vision {
+    background-color: red; /* Vision - Red background */
+}
+
+h3.objectives {
+    background-color: green; /* Objectives - Green background */
+}
+
+h3.values {
+    background-color: red; /* Values - Red background */
+}
+
+
+
+
+
+
+/* General styling for section content */
+.content-section {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Align the Vision text to the center */
+h3.vision + p {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0 auto; /* Center in the container */
+    width: 80%; /* Adjust width to control text wrapping */
+    line-height: 1.6; /* Better line spacing for readability */
+}
+
+h3.wellcome + p {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    text-align: center;
+    font-size: 1.2em;
+    margin: 0 auto; /* Center in the container */
+    width: 80%; /* Adjust width to control text wrapping */
+    line-height: 1.6; /* Better line spacing for readability */
+}
+
+
+
+
+
+
+
+
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 0px 0; /* Punguza nafasi ya juu na chini */
+    position: relative; /* Ruhusu kipengele cha ndani kusogea */
+}
+
+/* Logo styling */
+header .logo {
+    width: 60px; /* Punguza ukubwa wa nembo */
+    height: auto;
+    margin-bottom: -10px; /* Sogeza karibu na maandishi */
+    position: absolute;
+    top: 67px; /* Sogeza logo juu */
+    left: 50%; /* Weka katikati */
+    transform: translateX(-50%);
+}
+
+/* Heading styling */
+header h1 {
+    margin: 0;
+    font-size: 40px; /* Punguza ukubwa wa maandishi */
+    line-height: 2; /* Punguza nafasi kati ya mistari */
+}
+
+/* Slogan styling */
+header h2 {
+    margin: 2px 0 0; /* Punguza nafasi juu na chini ya slogan */
+    font-family: 'Dancing Script', cursive;
+    font-size: 18px; /* Punguza ukubwa wa maandishi */
+}
+
+/* General page layout adjustments */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.clock-container {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+
+
+
+/*Maboresho kwa watumiaji wa simu/
+
+
+
+
+/* Media Queries for Mobile Screens */
+@media (max-width: 768px) {
+    header {
+        padding: 8px 0; /* Punguza nafasi juu na chini kwa simu */
+    }
+
+    header .logo {
+        width: 40px; /* Punguza zaidi ukubwa wa nembo */
+    }
+
+    header h1 {
+        font-size: 18px; /* Boresha ukubwa wa heading kwa skrini ndogo */
+    }
+
+    header h2 {
+        font-size: 14px; /* Punguza slogan kwa simu */
+    }
+
+    .clock-container {
+        top: 5px; /* Sogeza saa juu kidogo */
+        right: 5px; /* Punguza nafasi pembeni */
+    }
+}
+
+
+
+
+
+
+.section ul {
+    margin: 0;
+    padding: 10px 20px;
+    list-style-type: none;
+}
+
+.section ul li {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.section p {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+
+
+
+.footer {
+    background: rgba(16, 23, 16, 0.5);
+    color: #ffffff;
+
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.footer-section {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-section h3 {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.footer-section p {
+    font-size: 14px;
+    margin: 0;
+    text-align: center;
+
+    color: #aaa;
+}
+
+.footer-section ul {
+    list-style: none;
+    text-align: center;
+    text-align: center;
+    padding: 0;
+}
+
+.footer-section ul li {
+    font-size: 14px;
+    color: #aaa;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    text-align: center;
+    left: 100px;
+}
+
+.social-icons a img {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    left: 100px;
+  
+}
+
+.stars {
+    color: #ffd700;
+    font-size: 16px;
+}
+
+.star-icon {
+    color: #00ff00;
+    font-size: 16px;
+    margin-right: 5px;
+}
